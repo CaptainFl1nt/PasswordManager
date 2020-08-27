@@ -161,8 +161,8 @@ class PasswordManager:
     """Represents the password manager for the program. To use,
     just create an instance of the class."""
 
-    def __init__(self,funny=True):
-        self.filename = "data.txt"
+    def __init__(self,file="data.txt",funny=True):
+        self.filename = file
         self.mast_hash = ""
         self.mast_salt = ""
         self.fun = funny
