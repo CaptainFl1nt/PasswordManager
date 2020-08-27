@@ -490,7 +490,7 @@ class ServiceAccount:
     def get_password(self):
         return self.password
 
-a = PasswordManager()
+manager = PasswordManager()
 # Clear the terminal so that information does not remain visible.
 if platform.system() == "Windows":
     os.system("cls")
