@@ -8,6 +8,7 @@ import binascii
 import secrets
 import hashlib
 import string
+import platform
 from os import path
 from time import sleep
 from getpass import getpass
@@ -491,4 +492,7 @@ class ServiceAccount:
 
 a = PasswordManager()
 # Clear the terminal so that information does not remain visible.
-os.system("clear")
+if platform.system() == "Windows":
+    os.system("cls")
+else:
+    os.system("clear")
