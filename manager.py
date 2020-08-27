@@ -252,7 +252,7 @@ class PasswordManager:
                 end = input("Type C to continue, Q to quit. ")
             if (end.strip().lower() == "q"):
                 break
-        f = open("data.txt","w")
+        f = open(self.filename,"w")
         f.write(self.mast_hash.hex()+"\n")
         f.write(self.mast_salt.hex())
         for account in self.accounts:
